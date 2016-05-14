@@ -1,10 +1,11 @@
 [Variables]
 
-;¤# DO NOT EDIT #¤ [Default = 1, 1,  ,  ]
+;¤# DO NOT EDIT #¤ [Default = 1, 1,  ,  , 1]
 HideAllGadgets=
 HideUI=
 HideVisualizer=
 HideWeather=
+HideWeatherNumbers=1
 
 ;# Welcome Screen #; [Default = 1, 1]
 HideWelcome=1
