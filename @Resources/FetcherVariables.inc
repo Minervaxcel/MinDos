@@ -1,7 +1,7 @@
 [Variables]
 RemainingHours=0
 RemainingMinutes=0
-RemainingSeconds=3
+RemainingSeconds=4
 
 InstantRemainingHours=0
 InstantRemainingMinutes=0

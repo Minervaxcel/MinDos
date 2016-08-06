@@ -23,9 +23,13 @@ function Update()
    SKIN:Bang('!SetVariable', 'InstantRemainingSeconds', NowSeconds)
    SKIN:Bang('!SetOption', 'MeasureBarTime', 'Formula', ((NowHours*3600)+(NowMinutes*60)+NowSeconds))
    
-   if TotalSeconds <= 0 then
-	  SKIN:Bang('!Refresh')
+   if TotalSeconds <= 1 then
+	  SKIN:Bang('!Refresh','MinDos\\Gadgets\\MusicuIsLifu\\Fetchers\\FetchSongClouder\\FetchLua.ini')
    end      
+   
+   if TotalSeconds <= 0 then
+   	  SKIN:BANG('!Refresh','MinDos\\Gadgets\\MusicuIsLifu\\MusicuIsLifu.ini')
+   end
    
    return "H: "..tostring(NowHours).." M: "..tostring(NowMinutes).." S: "..tostring(NowSeconds)
       
