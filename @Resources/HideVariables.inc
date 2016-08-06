@@ -24,3 +24,8 @@ HideSIMw8=
 ;- Visualizer -; [Default = 1, 1]
 HideWiringDot=1
 HideWiringDot2=1
+
+HideGadgetButtons=1
+ShowGadgetButtons=0
+HideLauncherButtons=1
+ShowLauncherButtons=0
