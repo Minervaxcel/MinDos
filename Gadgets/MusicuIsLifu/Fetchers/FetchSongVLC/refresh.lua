@@ -24,7 +24,7 @@ function Update()
    SKIN:Bang('!SetOption', 'MeasureBarTime', 'Formula', ((NowHours*3600)+(NowMinutes*60)+NowSeconds))
    
    if TotalSeconds <= 1 then
-	  SKIN:Bang('!Refresh','MinDos\\Gadgets\\MusicuIsLifu\\Fetchers\\FetchSongVLC\\FetchLua.ini')
+	  SKIN:Bang('!Refresh','MinDos\\Gadgets\\MusicuIsLifu\\Fetchers\\FetchSongVLC\\FetchLuA.ini')
    end      
    
    if TotalSeconds <= 0 then

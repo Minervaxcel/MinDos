@@ -21,11 +21,12 @@ function Update()
    SKIN:Bang('!SetVariable', 'RemainingHours', NowHours)
    SKIN:Bang('!SetVariable', 'RemainingMinutes', NowMinutes)
    SKIN:Bang('!SetVariable', 'RemainingSeconds', NowSeconds)
-   SKIN:Bang('!SetOption', 'MeasureBarTime', 'Formula', ((NowHours*3600)+(NowMinutes*60)+NowSeconds))
    
    if TotalSeconds == 90 then
       SKIN:Bang('!SetOption','WiringDot','ImageName','Button\\Wiring\\Dot-1-1')
 	  SKIN:Bang('!SetOption','WiringDot2','ImageName','Button\\Wiring\\Dot-2-1')
+	  SKIN:Bang('!Showmeter','WiringDot2')
+	  SKIN:Bang('!Showmeter','WiringDot')
    end
    
    if TotalSeconds == 89 then
@@ -360,7 +361,7 @@ function Update()
    end
    
    if TotalSeconds == 18 then
-	  SKIN:Bang('!Hidemeter','WiringDot')
+	  TotalSeconds = 92
    end
    
    
