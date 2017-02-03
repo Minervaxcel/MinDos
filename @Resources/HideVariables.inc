@@ -4,7 +4,7 @@
 HideAllGadgets=
 HideGadgetButtons=1
 ShowGadgetButtons=0
-HideUI=
+HideUI=1
 HideVisualizer=
 HideWeather=
 HideWeatherNumbers=1
@@ -34,18 +34,18 @@ HideWiringDot=1
 HideWiringDot2=1
 
 ;- TimeFlow -;
-DigitalON=0
-DigitalOFF=1
+DigitalON=1
+DigitalOFF=0
 AMPMON=1
 AMPMOFF=0
-12HOURON=1
-12HOUROFF=0
+12HOURON=0
+12HOUROFF=1
 
 TimeFormat=%R
-TimeFlowBG=BG2.png
+TimeFlowBG=BG3.png
 OLDTimeFlowBG=BG2.png
 
-MinutesTint=255,255,0
+MinutesTint=120,255,255
 
 420Status=1
 420StatusOFF=0
@@ -58,8 +58,14 @@ Neon12HoursOFF=0
 NeonAMPMON=1
 NeonAMPMOFF=0
 
-NeonMTint=251,3,3
-NeonHTint=240,110,170
+NeonMTint=255,153,52
+NeonHTint=152,255,254
+
+; - MinPCInfo - ;
+LineLaTint=152,255,254
+LineLbTint=255,153,52
+
+
 
 LauncherGadget=Launcher.ini
 VisualizerGadget=Visualizer.ini
@@ -69,7 +75,10 @@ WeatherGadget2=Weather.ini
 WeatherText=MinWeather
 WeatherText2=Weather
 
-PCInfoGadget=PCInfo.ini
+PCInfoGadget=MinPCInfo.ini
+PCInfoGadget2=PCInfo.ini
+PCInfoText=MinPCInfo
+PCInfoText2=PCInfo
 
 TimeFlowGadget=NeonTimeFlow.ini
 TimeFlowGadget2=TimeFlow.ini
@@ -80,4 +89,4 @@ GadgetInfoText=What can i open for you, #User#?
 ShowGadgetInfo=1
 
 WelcomeSec=6
-USER=Seppa
+USER=Minerva
