@@ -12,6 +12,7 @@ HidePCInfo=
 HidePCInfoNumbers=1
 HideLauncherButtons=1
 ShowLauncherButtons=0
+WelcomeSec=6
 
 ;# Welcome Screen #; [Default = 1, 1]
 HideWelcome=1
@@ -58,17 +59,53 @@ Neon12HoursOFF=0
 NeonAMPMON=1
 NeonAMPMOFF=0
 
-NeonMTint=255,153,52
-NeonHTint=152,255,254
+NeonMTint=152,255,254
+NeonHTint=255,153,52
 
 ; - MinPCInfo - ;
-LineLaTint=152,255,254
-LineLbTint=255,153,52
+LineLaTint=255,153,52
+LineLbTint=102,254,203
+
+; - Visualizer - ;
+BarImage=Palettes\Frost.png
+BarImage2=Solids\Purple.png
+BarImage3=Palettes\Frost.png
+BarImage4=Solids\Purple.png
+
+Bar1GS=0
+Bar1GSON=1
+Bar1Tint=255,0,254
+
+Bar2GS=0
+Bar2GSON=1
+Bar2Tint=
+
+Bar3GS=0
+Bar3GSON=1
+Bar3Tint=255,0,254
+
+Bar4GS=0
+Bar4GSON=1
+Bar4Tint=
+
+HideVisBG=0
+HideVisBar=0
+
+; - Flipped Visualizer - ;
+FlipBarImage=Palettes\FlipFrost.png
+FlipBarImage2=Solids\FlipPurple.png
+FlipBarImage3=Palettes\FlipFrost.png
+FlipBarImage4=Solids\FlipPurple.png
 
 
 
+; -- MINDOS -- ;
 LauncherGadget=Launcher.ini
+
 VisualizerGadget=Visualizer.ini
+VisualizerGadget2=FlippedVisualizer.ini
+VisualizerText=Visualizer
+VisualizerText2=Flipped Visualizer
 
 WeatherGadget=MinWeather.ini
 WeatherGadget2=Weather.ini
@@ -88,5 +125,4 @@ TimeFlowText2=TimeFlow
 GadgetInfoText=What can i open for you, #User#?
 ShowGadgetInfo=1
 
-WelcomeSec=6
 USER=Minerva
