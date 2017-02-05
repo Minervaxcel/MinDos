@@ -43,13 +43,8 @@ AMPMOFF=0
 12HOUROFF=1
 
 TimeFormat=%R
-TimeFlowBG=BG3.png
+TimeFlowBG=BG8.png
 OLDTimeFlowBG=BG2.png
-
-MinutesTint=120,255,255
-
-420Status=1
-420StatusOFF=0
 
 ; Neon ;
 Neon24HoursON=0
@@ -59,45 +54,12 @@ Neon12HoursOFF=0
 NeonAMPMON=1
 NeonAMPMOFF=0
 
-NeonMTint=152,255,254
-NeonHTint=255,153,52
-
-; - MinPCInfo - ;
-LineLaTint=255,153,52
-LineLbTint=102,254,203
+420Status=1
+420StatusOFF=0
 
 ; - Visualizer - ;
-BarImage=Palettes\Frost.png
-BarImage2=Solids\Purple.png
-BarImage3=Palettes\Frost.png
-BarImage4=Solids\Purple.png
-
-Bar1GS=0
-Bar1GSON=1
-Bar1Tint=255,0,254
-
-Bar2GS=0
-Bar2GSON=1
-Bar2Tint=
-
-Bar3GS=0
-Bar3GSON=1
-Bar3Tint=255,0,254
-
-Bar4GS=0
-Bar4GSON=1
-Bar4Tint=
-
 HideVisBG=0
 HideVisBar=0
-
-; - Flipped Visualizer - ;
-FlipBarImage=Palettes\FlipFrost.png
-FlipBarImage2=Solids\FlipPurple.png
-FlipBarImage3=Palettes\FlipFrost.png
-FlipBarImage4=Solids\FlipPurple.png
-
-
 
 ; -- MINDOS -- ;
 LauncherGadget=Launcher.ini
@@ -124,5 +86,3 @@ TimeFlowText2=TimeFlow
 
 GadgetInfoText=What can i open for you, #User#?
 ShowGadgetInfo=1
-
-USER=Minerva
