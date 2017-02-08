@@ -45,3 +45,5 @@ TempFontTint=255,153,52
 ConditionTint=255,0,0,220
 WindFontTint=115,181,205
 WindConditionFontTint=152,255,254,180
+HideVisBG=0
+HideVisBar=0
