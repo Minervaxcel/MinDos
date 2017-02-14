@@ -3,14 +3,14 @@ DarkLogin=60,46,61
 CurrentFontFace=SAO UI Regular
 
 ;- TimeFlow -;
-MinutesTint=120,255,255
+MinutesTint=0,221,0
 ; Neon
-NeonHTint=96,0,198
-NeonMTint=185,0,232,180
+NeonHTint=0,141,0
+NeonMTint=0,221,0
 
 ;- MinPCInfo -;
-LineLaTint=64,0,165
-LineLbTint=0,0,0
+LineLaTint=0,255,0,180
+LineLbTint=0,255,0,120
 
 PCFontTint=204,204,254
 PCSignTint=204,204,254
@@ -18,35 +18,35 @@ PCSignTint=204,204,254
 ;- Visualizer -;
 BarImage=Palettes\Frost.png
 BarImage2=Specials\Purple.png
-BarImage3=Palettes\Frost.png
-BarImage4=Specials\Purple.png
+BarImage3=Specials\Purple.png
+BarImage4=Palettes\Frost.png
 ; Flipped
 FlipBarImage=Palettes\FlipFrost.png
 FlipBarImage2=Specials\FlipPurple.png
-FlipBarImage3=Palettes\FlipFrost.png
-FlipBarImage4=Specials\FlipPurple.png
+FlipBarImage3=Specials\FlipPurple.png
+FlipBarImage4=Palettes\FlipFrost.png
 
-Bar1GS=0
+Bar1GS=1
 Bar1GSON=0
-Bar1Tint=255,0,254
+Bar1Tint=0,255,0
 
-Bar2GS=1
-Bar2GSON=0
-Bar2Tint=255,0,254
+Bar2GS=0
+Bar2GSON=1
+Bar2Tint=0,255,0
 
 Bar3GS=0
-Bar3GSON=0
-Bar3Tint=255,0,254
+Bar3GSON=1
+Bar3Tint=0,255,0
 
 Bar4GS=1
 Bar4GSON=0
-Bar4Tint=255,0,254
+Bar4Tint=0,255,0
 
 ;- Weather -;
-CityFontTint=185,0,232
-TempFontTint=136,0,212
-ConditionTint=109,0,198
-WindFontTint=160,0,202
-WindConditionFontTint=186,0,233
+CityFontTint=0,220,0
+TempFontTint=0,142,0
+ConditionTint=0,235,0
+WindFontTint=0,162,0
+WindConditionFontTint=0,178,0
 HideVisBG=0
-HideVisBar=1
+HideVisBar=0
