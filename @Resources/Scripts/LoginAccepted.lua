@@ -33,7 +33,7 @@ function Update()
    end
      
    if TotalSeconds <= 0 then
-   	  SKIN:Bang('!DisableMeasure', 'LoginAccepted')
+   	  SKIN:Bang('!WriteKeyValue', 'LoginAccepted', 'Disabled', '1')
    end
    
    return "H: "..tostring(NowHours).." M: "..tostring(NowMinutes).." S: "..tostring(NowSeconds)
