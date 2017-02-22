@@ -43,18 +43,6 @@ function Update()
    	  SKIN:Bang('!DisableMeasure', 'LuaIntro')
    end
    
-   -- Visualizer
-   
-   -- Musicu is Lifu
-   
-   -- Weather
-
-   -- PCInfo
-
-   -- TimeFlow  
-	
-   -- Launcher
-   
    return "H: "..tostring(NowHours).." M: "..tostring(NowMinutes).." S: "..tostring(NowSeconds)
       
 end --> Update

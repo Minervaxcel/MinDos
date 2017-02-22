@@ -11,3 +11,5 @@ HideLoginText=0
 HideLoginBox=0
 HideLoginBoxInput=0
 HideLoginButton=1
+UserTitle=
+USER=
