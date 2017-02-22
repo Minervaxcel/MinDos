@@ -39,8 +39,8 @@ DigitalON=1
 DigitalOFF=0
 AMPMON=1
 AMPMOFF=0
-12HOURON=0
-12HOUROFF=1
+12HOURON=1
+12HOUROFF=0
 
 TimeFormat=%R
 TimeFlowBG=BG8.png
@@ -84,5 +84,20 @@ TimeFlowGadget2=TimeFlow.ini
 TimeFlowText=Neon TimeFlow
 TimeFlowText2=TimeFlow
 
-GadgetInfoText=What can i open for you, #User#?
+GadgetInfoText=What can i open for you, #UserTitle#?
 ShowGadgetInfo=1
+
+CustomComm1=reddit
+CustomComm2=edit2
+CustomComm3=edit3
+CustomComm4=edit4
+CustomComm5=edit5
+CustomComm6=edit6
+CustomComm7=edit7
+CustomComm8=d
+CustomComm9=edit9
+CustomComm10=edit10
+CustomComm11=blupface
+CustomComm12=edit12
+CustomComm13=edit13
+CustomComm14=edit14
