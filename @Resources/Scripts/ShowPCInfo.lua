@@ -32,7 +32,7 @@ function Update()
    end
      
    if TotalSeconds <= 2 then
-	  SKIN:Bang('!ActivateConfig', 'MinDos\\Gadgets\\PCInfo', 'PCInfo.ini')
+	  SKIN:Bang('!ActivateConfig', 'MinDos\\Gadgets\\PCInfo', '#PCInfoGadget#')
 	  SKIN:Bang('!HideMeter', 'StartPCInfo')
    end
    

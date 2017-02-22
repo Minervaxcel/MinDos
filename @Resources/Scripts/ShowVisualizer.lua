@@ -34,7 +34,7 @@ function Update()
    end
      
    if TotalSeconds <= 2 then
-	  SKIN:Bang('!ActivateConfig', 'MinDos\\Gadgets\\Visualizer', 'Visualizer.ini')
+	  SKIN:Bang('!ActivateConfig', 'MinDos\\Gadgets\\Visualizer', '#VisualizerGadget#')
 	  SKIN:Bang('!Hidemeter', 'StartVisualizer')
    end
    

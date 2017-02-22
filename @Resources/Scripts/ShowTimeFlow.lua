@@ -31,7 +31,7 @@ function Update()
    end
      
    if TotalSeconds <= 2 then
-	  SKIN:Bang('!ActivateConfig', 'MinDos\\Gadgets\\TimeFlow', 'TimeFlow.ini')
+	  SKIN:Bang('!ActivateConfig', 'MinDos\\Gadgets\\TimeFlow', '#TimeFlowGadget#')
 	  SKIN:Bang('!HideMeter', 'StartTimeFlow')
    end
    

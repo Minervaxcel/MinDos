@@ -32,7 +32,7 @@ function Update()
    end
      
    if TotalSeconds <= 2 then
-	  SKIN:Bang('!ActivateConfig', 'MinDos\\Gadgets\\Launcher', 'Launcher.ini')
+	  SKIN:Bang('!ActivateConfig', 'MinDos\\Gadgets\\Launcher', '#LauncherGadget#')
 	  SKIN:Bang('!HideMeter', 'StartLauncher')
    end
    

@@ -32,7 +32,7 @@ function Update()
    end
      
    if TotalSeconds <= 2 then
-	  SKIN:Bang('!ActivateConfig', 'MinDos\\Gadgets\\Weather', 'Weather.ini')
+	  SKIN:Bang('!ActivateConfig', 'MinDos\\Gadgets\\Weather', '#WeatherGadget#')
 	  SKIN:Bang('!ActivateConfig', 'MinDos\\Gadgets\\Weather\\Config', 'Config.ini')
    end
    
