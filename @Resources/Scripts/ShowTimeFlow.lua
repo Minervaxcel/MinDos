@@ -10,7 +10,7 @@ end --> Initialize
 
 function Update()
 
-   TotalSeconds = TotalSeconds - 1
+   TotalSeconds = TotalSeconds + 1
    
    NowHours = math.floor(TotalSeconds / 3600)
    HoursRemainder = math.floor(TotalSeconds % 3600)
@@ -21,22 +21,24 @@ function Update()
    SKIN:Bang('!SetVariable', 'RemainingMinutes', NowMinutes)   
    SKIN:Bang('!SetVariable', 'WelcomeSec', NowSeconds)
    
-   if TotalSeconds <= 6 then
+   if TotalSeconds >= 0 then
 	  SKIN:Bang('!ShowMeter', 'StartTimeFlow')
    end
    
-   if TotalSeconds <= 4 then
-	  SKIN:Bang('!SetOption', 'IntroArrow', 'X', '(#ButtonSummonTimeFlowVerticalX# + (#WORKAREAWIDTH# * 0.0086805555555556))')
+   if TotalSeconds >= 2 then
+	  SKIN:Bang('!SetOption', 'IntroArrow', 'X', '((#WORKAREAWIDTH# * 0.7430555555555554) + (#WORKAREAWIDTH# * 0.0086805555555556))')
 	  SKIN:Bang('!Showmeter', 'IntroArrow')
    end
      
-   if TotalSeconds <= 2 then
+   if TotalSeconds >= 4 then
 	  SKIN:Bang('!ActivateConfig', 'MinDos\\Gadgets\\TimeFlow', '#TimeFlowGadget#')
 	  SKIN:Bang('!HideMeter', 'StartTimeFlow')
    end
    
-   if TotalSeconds <= 0 then
-   	  SKIN:Bang('!Showmeter', 'EndTimeFlow')
+   if TotalSeconds >= 6 then
+   	  SKIN:Bang('!Hidemeter', 'SkipBox')
+	  SKIN:Bang('!Hidemeter', 'SkipText')
+	  SKIN:Bang('!Showmeter', 'EndTimeFlow')
 	  SKIN:Bang('!ShowMeter', 'NextText')
    	  SKIN:Bang('!DisableMeasure', 'LuATimeFlow')
    end

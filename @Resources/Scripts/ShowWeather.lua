@@ -10,7 +10,7 @@ end --> Initialize
 
 function Update()
 
-   TotalSeconds = TotalSeconds - 1
+   TotalSeconds = TotalSeconds + 1
    
    NowHours = math.floor(TotalSeconds / 3600)
    HoursRemainder = math.floor(TotalSeconds % 3600)
@@ -21,29 +21,32 @@ function Update()
    SKIN:Bang('!SetVariable', 'RemainingMinutes', NowMinutes)   
    SKIN:Bang('!SetVariable', 'WelcomeSec', NowSeconds)
    
-   if TotalSeconds <= 6 then
+   if TotalSeconds >= 0 then
    	  SKIN:Bang('!HideMeter', 'EndMusicuIsLifu')
 	  SKIN:Bang('!ShowMeter', 'StartWeather')
    end
    
-   if TotalSeconds <= 4 then
-	  SKIN:Bang('!SetOption', 'IntroArrow', 'X', '(#ButtonSummonWeatherVerticalX# + (#WORKAREAWIDTH# * 0.0086805555555556))')
+   if TotalSeconds >= 2 then
+	  SKIN:Bang('!SetOption', 'IntroArrow', 'X', '((#WORKAREAWIDTH# * 0.8263888888888888) + (#WORKAREAWIDTH# * 0.0086805555555556))')
 	  SKIN:Bang('!Showmeter', 'IntroArrow')
    end
      
-   if TotalSeconds <= 2 then
+   if TotalSeconds >= 4 then
 	  SKIN:Bang('!ActivateConfig', 'MinDos\\Gadgets\\Weather', '#WeatherGadget#')
 	  SKIN:Bang('!ActivateConfig', 'MinDos\\Gadgets\\Weather\\Config', 'Config.ini')
+	  SKIN:Bang('!Setvariable', 'HideOption2', '0', 'MinDos\\Gadgets\\Weather\\Config', 'Config.ini')
+	  SKIN:Bang('!HideMeterGroup', 'Options', 'MinDos\\Gadgets\\Weather\\Config', 'Config.ini')
    end
    
-   if TotalSeconds <= 0 then
-   	  SKIN:Bang('!ShowMeter', 'StartWeather2')
+   if TotalSeconds >= 6 then
+	  SKIN:Bang('!Hidemeter', 'SkipBox')
+	  SKIN:Bang('!Hidemeter', 'SkipText')
 	  SKIN:Bang('!HideMeter', 'StartWeather')
    	  SKIN:Bang('!Showmeter', 'EndWeather')
 	  SKIN:Bang('!ShowMeter', 'NextText')
    	  SKIN:Bang('!DisableMeasure', 'LuAWeather')
    end
    
-   return "H: "..tostring(NowHours).." M: "..tostring(NowMinutes).." S: "..tostring(NowSeconds)
+   return "S: "..tostring(NowSeconds)
       
 end --> Update

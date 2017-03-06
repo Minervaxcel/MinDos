@@ -1,6 +1,6 @@
 [Variables]
 
-;¤# DO NOT EDIT #¤ [Default = 1, 1, 0,  1,  ,  , 1, , 1]
+;Â¤# DO NOT EDIT #Â¤ [Default = 1, 1, 0,  1,  ,  , 1, , 1]
 HideAllGadgets=
 HideGadgetButtons=1
 ShowGadgetButtons=0
@@ -12,7 +12,6 @@ HidePCInfo=
 HidePCInfoNumbers=1
 HideLauncherButtons=1
 ShowLauncherButtons=0
-WelcomeSec=6
 
 ;# Welcome Screen #; [Default = 1, 1]
 HideWelcome=1
@@ -51,8 +50,8 @@ Neon24HoursON=0
 Neon24HoursOFF=1
 Neon12HoursON=1
 Neon12HoursOFF=0
-NeonAMPMON=1
-NeonAMPMOFF=0
+NeonAMPMON=0
+NeonAMPMOFF=1
 
 420Status=1
 420StatusOFF=0
@@ -87,14 +86,14 @@ TimeFlowText2=TimeFlow
 GadgetInfoText=What can i open for you, #UserTitle#?
 ShowGadgetInfo=1
 
-CustomComm1=reddit
+CustomComm1=edit1
 CustomComm2=edit2
 CustomComm3=edit3
 CustomComm4=edit4
 CustomComm5=edit5
 CustomComm6=edit6
 CustomComm7=edit7
-CustomComm8=d
+CustomComm8=karim
 CustomComm9=edit9
 CustomComm10=edit10
 CustomComm11=blupface
